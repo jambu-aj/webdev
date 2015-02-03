@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Fill in a title</title> 
+  <title>George Burdell's Website</title> 
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
@@ -11,47 +11,75 @@
 
 <body>
 	<header>
+		<div id="main-nav">
 		<h1>George Burdell</h1>
-		<ul>
+		<ul id="nav">
 			<li><a href='#education'>Education<a/></li>
 			<li><a href='#skills'>Skills<a/></li>
 			<li><a href='#projects'>Projects<a/></li>
-			<li><a href='#leadership'>Leadership<a/></li>
-
-
-
+			<li><a href='#leadership'>Leadership<a/></l>
 		</ul>
-	</header>
-	<section id="education">
-		<h2>Education</h2>
-		<h3>Georgia Institute of Technology</h3>
-		<p>Fall 2013 - present</p>
-		<p>B.S. Computer Science, Info Internetworks and Media</p>
-		<h3>Metropolitan Community College</h3>
-		<p>Fall 2008 - Spring 2012<p>
-		<p>B.S. Computer Science, Info Internetworks and Media</p>
-	</section>
-
-	<section id="experience">
-		<h2>Experience</h2>
-	</section>
-
-	<section id="skills">
-		<h2>Skills</h2>
-	</section>
-
-	<section id="projects">
-		<h2>Projects</h2>
-		<div>
-			<a href="http://lsmhymnal.tk." target="_blank">
-				<h3>LSM Hymnal</h3>
-			<a/>
 		</div>
-	</section>
+	</header>
 
-	<section id="leadership">
-		<h2>Leadership</h2>
-	</section>
+	<div class="wrapper">
+		<img src="profile.jpg" class="profile">
+
+		<section id="education">
+			<div class="column">
+			<h2>Education</h2>
+			<h3>Georgia Institute of Technology</h3>
+			<p>Fall 2013 - present</p>
+			<p>B.S. Computer Science, Info Internetworks and Media</p>
+			<h3>Metropolitan Community College</h3>
+			<p>Fall 2008 - Spring 2012<p>
+			<p>B.S. Computer Science, Info Internetworks and Media</p>
+			</div>
+			
+			<div class="column">
+			<h2>Software Dev Intern, Tyler Technologies</h2>
+			<h3>Summer 2014</h3>
+			<p>I made a RESTful API for a large Silverlight application with a C# back-end. I also worked on client written code in HTML5/CSS/JS which uses the aforementioned API.</p>
+			<h2>Website Designer and Developer, Georgia Tech</h2>
+			<h3>2013 - 2014</h3>
+			<p>I created a beautiful, engaging, and responsive website and user experience for a web-based project written in PHP. I also wrote a sophisticated PHP survey for a research study.</p>
+			</div>
+		</section>
+
+		<section id="skills">
+			<div class="column">
+			<h2>Skills</h2>
+			<h3>Technical</h3>
+			<p>JavaScript, PHP 5, HTML5, CSS3, Java, C#, Jade, TypeScript, LESS, SCSS, Stylus, AngularJS, jQuery, Ionic Framework, Cordova, Grunt, Gulp, Bower, Jasmine, Node.js, ASP.NET MVC.</p>
+			<h3>Design</h3>
+			<p>Photoshop, Illustrator, InDesign, PremierePro, AfterEffects</p>
+			</div>
+
+		</section>
+
+		<section id="projects">
+			<div class="column">
+
+			<h2>Projects</h2>
+			<div>
+				<a href="http://lsmhymnal.tk." target="_blank">
+					<h3>LSM Hymnal</h3>
+				<a/>
+			</div>
+		</section>
+
+		<section id="leadership">
+			<div class="column">
+
+			<h2>Leadership</h2>
+			<h3>Technical Director, GT Web Dev</h3>
+			<p> I give talks on a variety of web development topics, ranging from the basics of HTML and CSS to advanced topics like building and consuming RESTful web services and making SPA apps. I'm also heavily involved in curriculum development and planning for each semester's talks and events.</p>
+			<h3>Cadet Commander, Aircraft Maintenance and Manufacturing Academy</h3>
+			<p> I lead and organized a national week-long, residential academy that taught participants about aircraft manufacturing and maintenance on the live production floor. I managed, coordinated, and organized transportation, scheduling, activities, housing, meals, paperwork, special guests, press releases, and a plethora of other logistical tasks. The academy was very successful and lead to an award.</p>
+			</div>
+		</section>
+	</div>
+
 </body>
 
 </html>
