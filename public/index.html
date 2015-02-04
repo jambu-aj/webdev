@@ -4,80 +4,111 @@
 <head>
   <title>George Burdell's Website</title> 
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <!--<script src="script.js"></script>-->
 </head>
 
 
 
 <body>
+
 	<header>
 		<div id="main-nav">
-		<h1>George Burdell</h1>
-		<ul id="nav">
-			<li><a href='#education'>Education<a/></li>
-			<li><a href='#skills'>Skills<a/></li>
-			<li><a href='#projects'>Projects<a/></li>
-			<li><a href='#leadership'>Leadership<a/></l>
-		</ul>
+		<h1><a href='#' class="black">George Burdell</a></h1>
+			<ul id="nav">
+				<li class="active"><a href='#education'>Education</a></li>
+				<li><a href='#experience'>Experience</a></li>
+				<li><a href='#projects'>Projects</a></li>
+				<li><a href='#extracurriculars'>Extracurriculars</a></li>
+				<li><a href='#honors'>Awards</a></li>
+			</ul>
 		</div>
 	</header>
 
 	<div class="wrapper">
-		<img src="profile.jpg" class="profile">
 
-		<section id="education">
-			<div class="column">
-			<h2>Education</h2>
-			<h3>Georgia Institute of Technology</h3>
-			<p>Fall 2013 - present</p>
-			<p>B.S. Computer Science, Info Internetworks and Media</p>
-			<h3>Metropolitan Community College</h3>
-			<p>Fall 2008 - Spring 2012<p>
-			<p>B.S. Computer Science, Info Internetworks and Media</p>
+		<section>
+			<img src="images/profile.jpg" class="profile">
+			<div class="social">
+				<p class="lead">Tinkerer, Designer, Developer.</p>
+				<p>I'm a programmer and designer based in Atlanta, GA. I love building beautiful and responsive applications using the latest web technologies.</p>
+				<p>Email: <a href="mailto:georgeburdell@gatech.edu">georgeburdell@gatech.edu</a><br>Phone: 555-137-1467</p>
+				<div class="social-icon"><a href="https://github.com/" target="_blank"><img src="images/github.png" class="social-icon"></a></div>
+				<div class="social-icon"><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" class="social-icon"></a></div>
+				<div class="social-icon"><a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" class="social-icon"></a></div>
+				<div class="social-icon"><a href="https://plus.google.com" target="_blank"><img src="images/googleplus.png" class="social-icon"></a></div>
 			</div>
+		</section>
+
+		<section>
+			<div class="column">
+				<h2><a class="anchor" id="education">Education</a></h2>
+				<h3>Georgia Institute of Technology</h3>
+				<p>Fall 2013 - present</p>
+				<p>B.S. Computer Science, Info Internetworks and Media</p>
+				<h3>Metropolitan Community College</h3>
+				<p>Fall 2008 - Spring 2012<p>
+				<p>B.S. Computer Science, Info Internetworks and Media</p>
+			</div>
+			<div class="column">
+				<h2><a class="anchor" id="skills">Skills</a></h2>
+				<h3>Technical</h3>
+				<p>JavaScript, PHP 5, HTML5, CSS3, Java, C#, Jade, TypeScript, LESS, SCSS, Stylus, AngularJS, jQuery, Ionic Framework, Cordova, Grunt, Gulp, Bower, Jasmine, Node.js, ASP.NET MVC.</p>
+				<h3>Design</h3>
+				<p>Photoshop, Illustrator, InDesign, PremierePro, AfterEffects</p>
+			</div>
+		</section>
+
+		<section>
+			<h2><a class="anchor" id="experience">Experience</a></h2>
 			
-			<div class="column">
-			<h2>Software Dev Intern, Tyler Technologies</h2>
-			<h3>Summer 2014</h3>
+			<h3>Software Dev Intern, Tyler Technologies</h3>
+			<p class="small">Summer 2014</p>
 			<p>I made a RESTful API for a large Silverlight application with a C# back-end. I also worked on client written code in HTML5/CSS/JS which uses the aforementioned API.</p>
-			<h2>Website Designer and Developer, Georgia Tech</h2>
-			<h3>2013 - 2014</h3>
+
+			<h3>Website Designer and Developer, Georgia Tech</h3>
+			<p class="small">2013-2014</p>
 			<p>I created a beautiful, engaging, and responsive website and user experience for a web-based project written in PHP. I also wrote a sophisticated PHP survey for a research study.</p>
-			</div>
 		</section>
 
-		<section id="skills">
-			<div class="column">
-			<h2>Skills</h2>
-			<h3>Technical</h3>
-			<p>JavaScript, PHP 5, HTML5, CSS3, Java, C#, Jade, TypeScript, LESS, SCSS, Stylus, AngularJS, jQuery, Ionic Framework, Cordova, Grunt, Gulp, Bower, Jasmine, Node.js, ASP.NET MVC.</p>
-			<h3>Design</h3>
-			<p>Photoshop, Illustrator, InDesign, PremierePro, AfterEffects</p>
-			</div>
-
-		</section>
-
-		<section id="projects">
-			<div class="column">
-
-			<h2>Projects</h2>
-			<div>
-				<a href="http://lsmhymnal.tk." target="_blank">
+		<section>
+				<h2><a class="anchor" id="projects">Projects</a></h2>
+				<div class="media">
+					<a href="http://lsmhymnal.tk/" target="_blank"><img src="images/open-hymnal-thumb.jpg" class="media-thumb"></a>
 					<h3>LSM Hymnal</h3>
-				<a/>
-			</div>
+					<p class="small">Beautiful hymnal reader for Android and the web.</p>
+					<p>A beautiful e-reader for the LSM hymnal with quick navigation features and a beautiful user interface. Bookmark your favorite hymns and customize the interface with full-screen, dark and light viewing modes.</p>
+				</div>
+				<div class="media">
+					<a href="http://tituswoo.com/project/catalyst/" target="_blank"><img src="images/teleop-catalyst-thumb.jpg" class="media-thumb"></a>
+					<h3>Teleop Catalyst for ROBOTC</h3>
+					<p class="small">Programming has never been easier.</p>
+					<p>Tele-op Catalyst makes it stupidly easy to create robust teleop (remote control) programs for the FIRST Tech Challenge using a simple but powerful "<span class="focus">click, command, create</span>" workflow. With Catalyst, you can get your robot running in minutes, with little to no programming experience.</p>
+				</div>
 		</section>
 
-		<section id="leadership">
-			<div class="column">
+		<section>
+			<h2><a class="anchor" id="extracurriculars">Extracurriculars</a></h2>
 
-			<h2>Leadership</h2>
 			<h3>Technical Director, GT Web Dev</h3>
 			<p> I give talks on a variety of web development topics, ranging from the basics of HTML and CSS to advanced topics like building and consuming RESTful web services and making SPA apps. I'm also heavily involved in curriculum development and planning for each semester's talks and events.</p>
 			<h3>Cadet Commander, Aircraft Maintenance and Manufacturing Academy</h3>
 			<p> I lead and organized a national week-long, residential academy that taught participants about aircraft manufacturing and maintenance on the live production floor. I managed, coordinated, and organized transportation, scheduling, activities, housing, meals, paperwork, special guests, press releases, and a plethora of other logistical tasks. The academy was very successful and lead to an award.</p>
-			</div>
 		</section>
+
+		<section>
+			<h2><a class="anchor" id="honors">Honors & Awards</a></h2>
+			<h3>Tyler Tech - FedEx Day 2nd Place Winner</h3>
+			<p>I developed a cross-platform, hybrid mobile application that leverages the powerful EnerGov RESTful API I worked on during the internship. I also developed an AngularJS directive that transforms tabular data into a fully responsive, touch friendly grid, complete with toggle controls and intelligent auto-switching based on screen size. Technologies used: JavaScript, AngularJS, Ionic Framework, Bootstrap, and LESS.</p>
+
+			<h3>Preliminary acceptance to the <span class="focus">SpaceX</span> Internship Program</h3>
+			<p>I was one of the 15 high school seniors selected in 2013 for SpaceX's inaugural internship program for FIRST FRC and FTC students.</p>
+		</section>
+
+		<footer>
+			<p>&#169; 2014 by GT WevDev Jambu.<p>	
+			<div id="top"><a href="#">&#8593; back to top</a></div>
+		</footer>
+
 	</div>
 
 </body>
