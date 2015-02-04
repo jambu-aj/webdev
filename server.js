@@ -8,9 +8,9 @@ app.use('/thegoodword', function(request, response){ // routes to this subdirect
 
 app.use(express.static('public')); //the static directory will route to 'public' 
 
-app.set('port', (process.env.PORT || 3000))
+//app.set('port', (process.env.PORT || 3000))
 
-app.listen(app.get('port'), function() {//using local port 3000 to host site
+app.listen(process.env.PORT || 3000, function() {//using local port 3000 to host site
 	console.log("Site is served on port 3000")
 })
 
